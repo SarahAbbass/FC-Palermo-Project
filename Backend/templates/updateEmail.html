@@ -1,0 +1,47 @@
+<html>
+<head>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+    <title>FC Palermo</title>
+</head>
+
+<body>
+    <div>
+        <button onclick = "location.href = '/';" id="doc-button" class="button2" type="button">Back</button>
+    </div>
+    <th><td>
+        <form action="" method="POST">
+           <br>  <p><strong>Update Email </strong></p>
+            
+                <br>Username <br>
+                <input type="text" name="username"><br>
+                <br>New Email <br>
+                <input type="text" name="newEmail"><br>
+              <br>
+                
+              <input class="button1" type="submit" value="Update">
+           <br>
+           {% if empty_e==True %}
+              <p style="color: red">A required field is empty. Please try again.</p>
+           {% endif %}
+           {% if user_belong==False %}
+              <p style="color: red">Username does not exist.</p>
+           {% endif %}
+           {% if emailF==False %}
+            <p style="color: red">Invalid email address.</p>
+            {% endif %}
+            {% if email_belong==True %}
+            <p style="color: red">Email address already exists.</p>
+            {% endif %}
+           {% if successE==True %}
+              <p style="color: green">Email updated!</p>
+           {% endif %}
+           
+     
+           </form> 
+             </td>
+        </th>
+
+
+<!-- <script src="script.js"></script>-->
+</body>
+</html>

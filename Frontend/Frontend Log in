@@ -1,0 +1,36 @@
+from tkinter import*
+import tkinter
+from tkinter import ttk
+root = Tk()
+root.geometry('2000x2000')
+root.title("Log In")
+
+from PIL import Image, ImageTk
+image1 = Image.open(r"C:\Users\waads\Desktop\Pedei 4k.jpg")
+
+test = ImageTk.PhotoImage(image1)
+label1 = tkinter.Label(image=test)
+label1.image = test
+
+
+label_0 = Label(root, text="Become a Palermer \n and feel closer to Palermo!",width=22,font=("Comic Sans MS", 30))
+label_0.place(x=50,y=140)
+
+label_1 = Label(root, text="Email Address",width=25,font=("Comic Sans MS", 20))
+label_1.place(x=100,y=330)
+entry_1 = Entry(root,font=40, width= 30, bd=10)
+entry_1.place(x=150,y=380)
+
+
+label_2 = Label(root, text="Password",width=25,font=("Comic Sans MS", 20))
+label_2.place(x=100,y=430)
+entry_2 = Entry(root,font=40, width= 30, bd=10)
+entry_2.place(x=150,y=470)
+
+
+b = Button(root,text = "Log In", width= 15, font=(20) )  
+b.place(x=230,y=520)
+
+# Position image
+label1.place(x=660, y=-100)
+root.mainloop()

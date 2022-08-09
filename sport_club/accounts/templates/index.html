@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Auth System</title>
+</head>
+<body>
+    {% block content %}
+        <h1> Welcome Home </h1>
+      
+            <a href="{% url 'login_url' %}">Login</a>
+            <a href="{% url 'register_url' %}">Register</a>
+    
+            <a href="{% url 'logout_url' %}">Logout</a>
+        
+    {% endblock %}
+</body>
+</html>

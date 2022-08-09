@@ -1,0 +1,29 @@
+<html>
+<head>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+    <title>Palermo</title>
+</head>
+
+<body>
+
+    <div class = "header">
+        <h1 onclick = "location.href = '/';">FC Palermo</h1>
+    </div>
+    <center>
+    <div class = "wrapper">
+        <h2>Account Management</h2>
+
+	<form name="choose-category">
+	<div class="flex-parent jc-center">
+        <button onclick = "location.href = '/login';" id="doc-button" class="button2" type="button">Login</button>
+		<button onclick = "location.href = '/register';" id="doc-button" class="button2" type="button">Register</button>
+		<button onclick = "location.href = '/update_pass';" id="pts-button" class="button2" type="button">Update Password</button>	
+		<button onclick = "location.href = '/update_email';" id="pts-button" class="button2" type="button">Update Email</button>
+        <button onclick = "location.href = '/delete_acc';" id="pts-button" class="button2" type="button">Delete Account</button>
+	</div>	
+</center>
+
+
+<!-- <script src="script.js"></script>-->
+</body>
+</html>

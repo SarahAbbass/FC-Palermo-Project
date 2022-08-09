@@ -1,0 +1,44 @@
+<html>
+<head>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+    <title>FC Palermo</title>
+</head>
+
+<body>
+    <div>
+        <button onclick = "location.href = '/';" id="doc-button" class="button2" type="button">Back</button>
+    </div>
+    <th><td>
+        <form action="" method="POST">
+           <br>  <p><strong>Update Password </strong></p>
+            
+                <br>Username <br>
+                <input type="text" name="username"><br>
+                <br>New Password <br>
+                <input type="text" name="newPass"><br>
+              <br>
+                
+              <input class="button1" type="submit" value="Update">
+           <br>
+           {% if empty_u==True %}
+              <p style="color: red">A required field is empty. Please try again.</p>
+           {% endif %}
+           {% if user_belong==False %}
+              <p style="color: red">Username does not exist.</p>
+           {% endif %}
+           {% if lengthN==False %}
+              <p style="color: red">Password should be between 8 and 12 characters long.</p>
+           {% endif %}
+           {% if condsN==False %}
+              <p style="color: red">Password should contain at least one capital letter and one special character(@,-,_,$,#).</p>
+           {% endif %}
+           {% if successN==True %}
+              <p style="color: green">Password updated!</p>
+           {% endif %}
+           
+     
+           </form> 
+             </td>
+        </th>
+    </body>
+    </html>

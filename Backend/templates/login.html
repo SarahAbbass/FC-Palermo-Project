@@ -1,0 +1,45 @@
+<html>
+<head>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+    <title>FC Palermo</title>
+</head>
+
+<body>
+    <div>
+        <button onclick = "location.href = '/';" id="doc-button" class="button2" type="button">Back</button>
+    </div>
+    <th><td>
+        <form action="" method = "POST">
+           <br>  <p><strong>Login </strong></p>
+            
+                <br>Username <br>
+                <input type="text" name="username"><br>
+                <br>Password <br>
+                <input type="text" name="pass"><br>
+                
+              <input class="button1" type="submit" value="Login">
+           <br>
+           {% if empty_log==True %}
+              <p style="color: red">A required field is empty. Please try again.</p>
+           {% endif %}
+           {% if user_belong==False %}
+              <p style="color: red">Username does not exist.</p>
+           {% endif %}
+           {% if match==False %}
+              <p style="color: red">Incorrect password.</p>
+           {% endif %}
+           
+           {% if success==False %}
+              <p style="color: red">Login Failed. User already exists.</p>
+           {% endif %}
+           {% if success==True %}
+              <p style="color: green">Successful Login!</p>
+           {% endif %}
+           
+     
+           </form> 
+             </td>
+        </th>
+    </body>
+    </html>
+    

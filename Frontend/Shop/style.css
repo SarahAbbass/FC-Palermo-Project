@@ -1,0 +1,169 @@
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(1, 66, 106);
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+  }
+  
+
+  li a:hover {
+    background-color: rgb(41, 166, 243);
+  }
+
+  li {
+    border-right: 1px solid #bbb;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+
+  p{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(116, 191, 238);
+    text-align: center;
+    padding: 5px 18px;
+
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 14px;
+  margin-right: 8px;
+  font-size: 13px;
+}
+
+.background{
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.best{
+
+  float: center;
+  text-align: center; 
+  font-size: 90px;
+  color: white; 
+  margin-top: 100px; 
+}
+
+.shop_now {
+
+  
+  font-size: 50px;
+  color: rgb(1, 66, 106);
+  position: center;
+  width: 1400px; 
+  
+}
+
+.shopnow{
+  margin: auto;
+  display: flex;
+  text-align: center;
+
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(116, 191, 238);
+  padding: 10px;
+
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 0px;
+  text-align: center;
+  width: 350px;
+  height: 329px;
+}
+
+.grid{
+  margin-top: -397px;
+  margin-right: 0px;
+  margin-left: 610px;
+
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(116, 191, 238);
+  padding: 10px;
+  gap: -10px;
+
+}
+
+.grid-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 350px;
+  height: 315px;
+}
+
+.grid2{
+  margin-top: px;
+  margin-right: 0px;
+  margin-left: 610px;
+
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(116, 191, 238);
+  padding: 10px;
+
+}
+
+.grid-item3 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 555px;
+  height: 313px;
+}
+
+.grid3{
+  margin-top: -375px;
+  margin-right: 810px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+
+}
+

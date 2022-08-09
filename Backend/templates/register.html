@@ -1,0 +1,61 @@
+<html>
+<head>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+    <title>FC Palermo</title>
+</head>
+
+<body>
+    <div>
+        <button onclick = "location.href = '/';" id="doc-button" class="button2" type="button">Back</button>
+    </div>
+    <th><td>
+        <form action="" method="POST">
+           <br>  <p><strong>Register </strong></p>
+            
+                <br>Email <br>
+                <input type="text" name="email"><br>
+                <br>Username <br>
+                <input type="text" name="username"><br>
+              <br>Password <br>
+              <input type="text" name="pass"><br>
+              <br>Country <br>
+              <input type="text" name="country"><br>
+              <br>Date of Birth (DD/MM/YYYY)<br>
+              <input type="text" name="dob"><br>
+     
+              <br>
+                
+              <input class="button1" type="submit" value="Register">
+           <br>
+           {% if empty==True %}
+              <p style="color: red">A required field is empty. Please try again.</p>
+           {% endif %}
+           {% if emailF==False %}
+              <p style="color: red">Invalid email address.</p>
+           {% endif %}
+           {% if userF==False %}
+           <p style="color: red">Username should be <strong>at most</strong> 8 characters long.</p>
+            {% endif %}
+           {% if length==False %}
+              <p style="color: red">Password should be between 8 and 12 characters long.</p>
+           {% endif %}
+           {% if conds==False %}
+              <p style="color: red">Password should contain at least one capital letter and one special character(@,-,_,$,#).</p>
+           {% endif %}
+           {% if bad_date==True %}
+              <p style="color: red">Invalid date of birth.</p>
+           {% endif %}
+           {% if success2==False %}
+              <p style="color: red">Login Failed. User already exists.</p>
+           {% endif %}
+           {% if success2==True %}
+              <p style="color: green">Successful Registration!</p>
+           {% endif %}
+           
+     
+           </form> 
+             </td>
+        </th>
+    </body>
+    </html>
+    
